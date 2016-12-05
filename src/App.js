@@ -6,8 +6,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h3>z a r a g o s a</h3>
-        <nav className="nav">
+        <nav>
           <Link to="/"activeClassName="active">home</Link>
           <Link to="/shop"activeClassName="active">shop</Link>
           <Link to="/studio"activeClassName="active">studio</Link>

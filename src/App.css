@@ -1,9 +1,9 @@
 /*Home*/
-body{
+/*body{
   background: url(/images/house.jpg) center;
   background-size: 50%;
   background-repeat: no-repeat;
-}
+}*/
 
 h3{
   text-align: center;
@@ -12,6 +12,12 @@ h3{
 }
 
 nav{
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
+}
+
+nav a{
+  text-align: center;
+  padding: 5%;
+  letter-spacing: 5px;
+  text-decoration: none;
 }
