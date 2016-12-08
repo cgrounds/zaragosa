@@ -1,0 +1,14 @@
+.items{
+  display: flex;
+  flex-direction: column;
+}
+
+.item-info {
+  visibility: visible;
+  color: black;
+  display: inline;
+}
+
+.hidden{
+  visibility: hidden;
+}
