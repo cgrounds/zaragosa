@@ -26,19 +26,13 @@
   to   { top: 100px; left: 100px; }
 }
 
-nav{
-  /*background-image: url('/images/house.jpg');
-  background-size: 40%;
-  background-repeat: no-repeat;*/
-  text-align: center;
-  opacity: 100px;
-  display: relative;
-}
 
-nav a{
+a{
   text-align: center;
   padding: 5%;
   letter-spacing: 5px;
   text-decoration: none;
   color: black;
+  margin: 0 auto;
+  display: inline-block;
 }

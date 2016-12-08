@@ -1,36 +1,42 @@
 import React, { Component } from 'react';
-import './Item.css';
-
+import './Shops.css';
 
 
 class Product extends Component {
   constructor(props){
     super(props);
     this.state={
-      item: false
+      mouseOver: false
     }
     this._displayInfo=this._displayInfo.bind(this)
+    this._hideInfo=this._hideInfo.bind(this)
   }
 
   _displayInfo(e){
-    e.preventDefault();
-     if (this.props.item.listing_id===this.props.image.listing_id){
-      console.log(this.props.item.price)
-      return <div className="item-info">{this.props.item.title} ${this.props.item.price}</div>
-   }
-      this.setState({
-       item: true
-      })
-    }
+    this.setState({ mouseOver: false });
+  }
+
+  _hideInfo(e){
+    this.setState({ mouseOver: true });
+  }
+
+
+
 
   render(){
-    let cssClass='Item'
-    if (this.state.item===true) {
-      cssClass+='Item-show'
+    let cssClass = "item-info"
+    if (!this.state.mouseOver) {
+      cssClass += ' hidden'
     }
+
     return(
 
-        <img className="item-images" role="presentation" src={this.props.image.url_570xN} onMouseOver={(e) => this._displayInfo(e)}></img>
+        <div className="item">
+          <img className="image-container" role="presentation" src={this.props.image.url_570xN
+} onMouseOver={(e) => this._displayInfo(e)} onMouseLeave={(e) => this._hideInfo(e)}/>
+          <div className={cssClass}>{this.props.item.title}</div>
+        </div>
+
     )
   }
 }

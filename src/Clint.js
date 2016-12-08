@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import _ from 'lodash';
 import './Shops.css';
-import Product from './Product.js'
+import Product from './Product.js';
 
 class Clint extends Component {
   constructor(props){
@@ -21,7 +22,6 @@ _getApiInformation(){
   })
   .then((response) => {
     let apiInfo = response.data.results
-    console.log({apiInfo});
     this.setState({
       apiInfo: apiInfo
     })
@@ -61,13 +61,16 @@ _getApiImages(){
   render(){
 
     return(
-      <div className="items">
-        <div className="images-div">
-          {this.state.images.map((image, i) => {
-            return <Product key={i} item={this.state.apiInfo[i]} image={image.url_570xN} />
 
+        <div className="images-div">
+          {_.map(this.state.images, (image, i) => {
+            let listingId =image.listing_id;
+
+            let item = _.find(this.state.apiInfo, { listing_id : listingId })
+        
+            return <Product key={i} item={item} image={image} />
               })}
-        </div>
+
       </div>
     )
   }
