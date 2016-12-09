@@ -13,30 +13,29 @@ class Product extends Component {
   }
 
   _displayInfo(e){
-    this.setState({ mouseOver: false });
-  }
-
-  _hideInfo(e){
     this.setState({ mouseOver: true });
   }
 
-
-
+  _hideInfo(e){
+    this.setState({ mouseOver: false });
+  }
 
   render(){
     let cssClass = "item-info"
     if (!this.state.mouseOver) {
       cssClass += ' hidden'
     }
-
     return(
-
-        <div className="item">
-          <img className="image-container" role="presentation" src={this.props.image.url_570xN
-} onMouseOver={(e) => this._displayInfo(e)} onMouseLeave={(e) => this._hideInfo(e)}/>
-          <div className={cssClass}>{this.props.item.title}</div>
+        <div className="item" onMouseOver={(e) => this._displayInfo(e)} onMouseLeave={(e) => this._hideInfo(e)}>
+          <img className="image-container" role="presentation" src={this.props.image.url_170x135} />
+          <div className={cssClass}><a href={this.props.item.url} target="_blank">
+            <div className="item-title">{this.props.item.title}</div>
+            <hr />
+            {this.props.item.price}
+            <br />
+            {this.props.item.description}
+          </a></div>
         </div>
-
     )
   }
 }

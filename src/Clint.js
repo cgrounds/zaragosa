@@ -65,12 +65,9 @@ _getApiImages(){
         <div className="images-div">
           {_.map(this.state.images, (image, i) => {
             let listingId =image.listing_id;
-
             let item = _.find(this.state.apiInfo, { listing_id : listingId })
-        
             return <Product key={i} item={item} image={image} />
               })}
-
       </div>
     )
   }

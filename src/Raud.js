@@ -4,7 +4,6 @@ import './Shops.css'
 
 class Raud extends Component {
 
-
 render(){
   return(
     <div>

@@ -1,31 +1,9 @@
 /*Home*/
-/*body{
-  background: url(/images/house.jpg) center;
-  background-size: 50%;
-  background-repeat: no-repeat;
-}*/
-
-.zaragosa{
-  text-align: center;
-  /*margin-top: 25%;*/
-  font-size: 100%;
-  font-family: 'BioRhyme Expanded', serif;
-  position: relative;
-  background-color: white;
-  animation-name: example;
-  animation:
-      first-animation 2s infinite,
-      another-animation 1s;
-  opacity: 100%;
-  display: inline;;
-  position: relative;
+h1{
+  border-bottom: 1px solid black;
+  color: orange;
+  letter-spacing: 2px;
 }
-
-@keyframes example {
-  from { top: 0; left: 0; }
-  to   { top: 100px; left: 100px; }
-}
-
 
 a{
   text-align: center;
@@ -33,6 +11,65 @@ a{
   letter-spacing: 5px;
   text-decoration: none;
   color: black;
-  margin: 0 auto;
   display: inline-block;
+  font-family: 'Wire One', sans-serif;
+}
+
+.main-links{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  margin-top: 10px;
+  animation: mymove 2s infinite;
+}
+
+.main-links:hover{
+  color: red;
+}
+
+.home{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation: fadeIn 6s;
+}
+
+.titles{
+  display: flex;
+  justify-content: center;;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Wire One', sans-serif;
+}
+
+#zaragosa{
+  height: 50%;
+  width: 50%;
+  display: block;
+  float: right;
+  margin-top: 5%;
+}
+
+@keyframes example {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes mymove {
+  0%   { background-color: rgba(0, 255, 255, 1); }
+  50%  { background-color: rgba(0, 255, 255, 0); }
+  100% { background-color: rgba(0, 255, 255, 1); }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
