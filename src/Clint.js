@@ -73,19 +73,5 @@ _getApiImages(){
   }
 }
 
-// <div className="items">
-//   <div className="items-div">
-//     {this.state.apiInfo.map((item, i) => {
-//       return <div key={i} className="item-info">
-//         {item.title} ${item.price}</div>
-//         })}
-//   </div>
-//   <div className="images-div">
-//     {this.state.images.map((image, i) => {
-//         return <img key={i} className="item-images"
-//         src={image.url_570xN}></img>
-//         })}
-//   </div>
-// </div>
 
 export default Clint;
