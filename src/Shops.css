@@ -1,3 +1,18 @@
+a.name-links {
+  border-bottom: 1px solid black;
+  text-align: center;
+  margin: 30px ;
+  padding: 10px;
+  text-align: center;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation: fadeIn 6s;
+}
+
+a.name-links:hover{
+  color: red;
+}
+
 .items{
   display: flex;
   flex-direction: column;
@@ -7,8 +22,48 @@
   visibility: visible;
   color: black;
   display: inline;
+  text-align: center;
+  font-family: 'Wire One', sans-serif;
+}
+
+.item-info :hover{
+  color: orange;
 }
 
 .hidden{
   visibility: hidden;
+}
+
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;;
+}
+
+.item-title{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.personal-shops{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal-shops{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

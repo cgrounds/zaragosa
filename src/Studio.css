@@ -1,0 +1,42 @@
+.studio-page{
+  text-align: center;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation: fadeIn 6s;
+}
+
+.studio-title{
+  font-family: 'Wire One', sans-serif;
+  border-bottom: 2px solid black;
+}
+
+p{
+  font-family: 'Wire One', sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+img{
+  width: 20%;
+  display: block;
+  float: right;
+}
+
+.studio-pics{
+  display: block;
+}
+
+.studio-info{
+  padding: 0px;
+  padding-bottom: 25px;
+  font-size: 25px;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

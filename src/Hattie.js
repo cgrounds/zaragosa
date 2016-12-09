@@ -4,9 +4,6 @@ import './Shops.css'
 
 class Hattie extends Component {
 
-
-
-
   render(){
     return(
       <div>
