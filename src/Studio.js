@@ -15,7 +15,7 @@ class Studio extends Component {
            </p>
           <a className="studio-info" href="mailto:clintgrounds@gmail.com">clintgrounds@gmail.com</a>
           <br />
-          <a className="studio-info" herf="tel:8127982406">812 . 798 . 2406</a>
+          <p className="studio-info">812 . 798 . 2406</p>
 
 
 
