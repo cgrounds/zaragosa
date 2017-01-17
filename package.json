@@ -2,7 +2,6 @@
   "name": "zaragosa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cgrounds.github.io/zaragosa",
   "devDependencies": {
     "react-scripts": "0.8.0"
   },
